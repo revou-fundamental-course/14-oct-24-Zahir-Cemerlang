@@ -1,0 +1,32 @@
+/* Inl CSS */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-icon {
+  height: 50px;
+  width: 50px;
+  background-image: url("../assets/logo.png"); /* Perbarui URL gambar logo */
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  border: 1px solid;
+  padding: 8px;
+  text-decoration: none;
+  color: black;
+}
+
+footer > div {
+  text-align: center;
+  font-family: cursive;
+  font-size: small;
+}
