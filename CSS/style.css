@@ -8,9 +8,9 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 2%;
-  background-color: gray;
+  background: rgb(255, 255, 255);
   width: auto;
-  height: 30px;
+  height: 10px;
 }
 
 .logo-container {
@@ -21,10 +21,9 @@ html {
 .logo-icon {
   height: 50px;
   width: 50px;
-  background-image: url("../assets/logo.png"); /* Perbarui URL gambar logo */
+  background-image: url("../assets/logo.png");
   background-size: cover;
   background-position: center;
-  border-radius: 50%;
 }
 
 .logo-teks {
@@ -32,6 +31,7 @@ html {
   font-size: 1.8em;
   margin-left: 10px;
   text-transform: capitalize;
+  color: rgb(109, 0, 0);
 }
 
 nav {
@@ -41,24 +41,43 @@ nav {
 nav a {
   padding: 8px;
   text-decoration: none;
-  color: black;
+  font-family: "franklin gothic";
+  color: rgb(109, 0, 0);
   transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover {
   /* background-color: lightgray; */
-  color: white;
+  color: rgb(255, 0, 0);
   font-weight: bold;
 }
 
 /* Section header */
 #section-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-image: url();
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  width: auto;
+  height: 55vh;
+  padding: 10%;
+  background-image: url("../assets/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Terapkan animasi pada elemen yang diinginkan */
+#welcome {
+  animation: fade 1s ease-in-out;
 }
 
 footer > div {
